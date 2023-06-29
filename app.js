@@ -15,7 +15,7 @@ fetch('https://randomuser.me/api/?results=5')
     const fichepersonne = resultats.map((person) => {
         console.log(person);
         const { picture: {large}, name: {first, last}, email } = person;
-// On prend l'image large car les 2 autres formats sont trop petits et comme le nom et le prénom sont dands des champs séparés, on prend les 2 pour afficher le nom complet
+// On prend l'image large car les 2 autres formats sont trop petits et comme le nom et le prénom sont dans des champs séparés, on prend les 2 pour afficher le nom complet
     return `
         <article class='ficheID'>
             <img src='${large}'></img>
